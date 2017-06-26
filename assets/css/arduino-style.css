@@ -1,3 +1,4 @@
+
 html, body {
 	background-color: #f7f7f7;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -38,7 +39,7 @@ html, body {
 }
 .arduino-switch {
     position: absolute;
-    margin-top: 9.5em;
+    margin-top: 9em;
     left: 58%;
     font-size: 20px;
     font-weight: 500;
@@ -46,9 +47,19 @@ html, body {
 .arduino-switch table {
 	width: 400px;
 }
+.arduino-right-img {
+    position: absolute;
+    top: 54%;
+    left: 82%;
+}
+.arduino-right-img img {
+    width: 280px;
+    height: auto;
+}
+
 footer {
   position: absolute;
-  top: 92%;
+  top: 100%;
   width: 100%;
   height: 60px;
   background-color: #f7f7f7;

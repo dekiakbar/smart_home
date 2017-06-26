@@ -1,27 +1,25 @@
 <?php
-
-
 class config{
 
-	private $host = 'localhost';
-	private $user = 'root';
-	private $pass = 'toor';
-	private $db   = 'smart_home';
+	private $conn = "";
+  private $host = "localhost";
+  private $user = "root";
+  private $password = "toor";
+  private $database = "smart_home";
 
-  /*function koneksi(){
+  function __construct() {
+    $conn = $this->connectDB();
+    if(!empty($conn)) {
+      $this->conn = $conn;      
+    }
+  }
 
-  	$konek = mysql_connect($this->host,$this->user,$this->pass);
-      
-      if (!$konek){
-      	die('MySQL ERROR: ' . mysql_error());
-      }
-      
-      mysql_select_db($this->db);
-
-     return $konek;
-  }*/
-
-  function koneksi(){
+  function connectDB() {
+    $conn = mysqli_connect($this->host,$this->user,$this->password,$this->database);
+    return $conn;
+  }
+  
+   /*function koneksi(){
     
     $this->koneksi = new mysqli($this->host,$this->user,$this->pass,$this->db);
     if ($this->koneksi->connect_errno) {
@@ -30,13 +28,13 @@ class config{
     }else{
       printf ("Koneksi Berhasil \n");
     }
-  }
+  }*/
 
   function query($sql) {
 
-    $hasil = $this->koneksi->query($sql);
-    if(mysqli_errno($this->koneksi)){
-        die('Eroor :'. mysqli_error($this->koneksi));
+    $hasil = $this->conn->query($sql);
+    if(mysqli_errno($this->conn)){
+        die('Eroor :'. mysqli_error($this->conn));
     }
     return $hasil;
   
@@ -48,23 +46,31 @@ class config{
   
   }
 
-  function relay1(){
-   
-     $relay1 = $_POST['relay1'];
 
-     if($relay1=='true'){
-	  $message = 'Hey my button is enabled';
-      $success = 'On';
-	  echo json_encode(array('message'=>$message,'success'=>$success));
-     } else  if($relay1=='false'){
-	  $message = 'Hey my button is disabled.';
-	  $success = 'Off';
-   	  echo json_encode(array('message'=>$message,'success'=>$success));
-     }
 
-   }
+
+function runSelectQuery($query) {
+    $result = mysqli_query($this->conn,$query);
+    while($row=mysqli_fetch_assoc($result)) {
+      $resultset[] = $row;
+    }
+    if(!empty($resultset))
+      return $resultset;
+  }
+ 
+  function executeInsert($query) {
+        $result = mysqli_query($this->conn,$query);
+        $insert_id = mysqli_insert_id($this->conn);
+    return $insert_id;
+    
+    }
+ 
+  function executeQuery($sql) {
+    $result = mysqli_query($this->conn,$sql);
+    return $result;
+    
+    }
+
+
 
 }
-
-
-?>
