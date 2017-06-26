@@ -85,6 +85,9 @@ $konek = $konfig->koneksi();
 		$ambil = $konfig->fetchArray($sql);
 		$data = $ambil["kondisi"];
 		$data = substr_replace($data, "0", "0","1");
+		if (strlen($data) < 8) {
+			$data=str_pad($data,8, "0", STR_PAD_LEFT);
+		}
 		$konfig->query("UPDATE relay SET kondisi=".$data);
 		sleep(1);
 	} else if($_REQUEST['relay2'] == 'false'){
