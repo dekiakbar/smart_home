@@ -10,14 +10,17 @@ $serial->deviceSet("/dev/ttyACM0");
 $serial->deviceOpen();	
 
 $konfig = new config();
-/*
+
 if($_POST['name'] == 'relay1'){
   	
   	if($_POST['relay'] == 'true') {
 		$sql = $konfig->query("SELECT kondisi FROM relay WHERE id=1");
 		$ambil = $konfig->fetchArray($sql);
 		$data = $ambil["kondisi"];
-		$data = substr_replace($data, "1", "0","1");-
+		$data = substr_replace($data, "1", "0","1");
+		if (strlen($data) < 8) {
+			$data=str_pad($data,8, "0", STR_PAD_RIGHT);
+		}
 		$konfig->query("UPDATE relay SET kondisi=".$data);
 		sleep(1);
 		$msg  = 'Switch 1 diaktivkan';
@@ -192,13 +195,11 @@ if($_POST['name'] == 'relay1'){
 }
   
  echo json_encode(array('msg' => $msg,'sucr' => $sucr));
-*/
+
 $sql = $konfig->query("SELECT kondisi FROM relay WHERE id=1");
 $ambil = $konfig->fetchArray($sql);
 $kondisi = $ambil["kondisi"];
 $serial->sendMessage($kondisi);
-    $read = $serial->readPort();
-    echo $read;
 $serial->deviceClose();
 
 $serial->confBaudRate(38400);
