@@ -65,8 +65,13 @@ $no=1;
 
              <tbody>
                   <tr>
-                   <td><div id="headr2"></div></td>
-                   <td><div id="heading"></div></td>
+                   <td>Temperature</td>
+                   <td><div id="temp"></div></td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                   <td>Kelembaban</td>
+                   <td><div id="kelembaban"></div></td>
                   <td></td>
                  </tr>
              </tbody>

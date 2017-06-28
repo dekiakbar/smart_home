@@ -7,10 +7,10 @@
       success:function(data)
       {
         var data = eval(data);
-      mesr2  = data.message;
+      mesr2  = data.mesr2;
       temp  = data.temp;
-      $('#headr2').html(temp);
-      $('#body').html(message);
+      $('#temp').html(temp);
+      $('#kelembaban').html(mesr2);
       }
     });
 });
