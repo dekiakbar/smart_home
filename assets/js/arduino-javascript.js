@@ -1,4 +1,21 @@
-function createNew() {
+  $('.refresh').click(function(){
+    $.ajax({
+      type:'POST',
+      dataType:'JSON',
+      url:'conf/cek.php',
+      data:{'submit':true},
+      success:function(data)
+      {
+        var data = eval(data);
+      mesr2  = data.message;
+      temp  = data.temp;
+      $('#headr2').html(temp);
+      $('#body').html(message);
+      }
+    });
+});
+
+/*function createNew() {
   $("#add-more").hide();
   var data = '<tr class="table-row" id="new_row_ajax">' +
   '<td class="blue-text text-darken-2"><i class="mdi mdi-plus mdi-18px"></i> Tambah Data -></td>'+
@@ -58,7 +75,7 @@ function deleteRecord(id) {
     });
 
 }
-
+*/
 $(function(){
   $('.relay').change(function(){
    var relay = $(this).prop('checked');

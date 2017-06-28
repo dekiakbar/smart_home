@@ -53,34 +53,22 @@ $no=1;
   <div class="container">
   	<div class="arduino-body">
         <div class="tbl-header green-text text-darken-1"><i class="mdi mdi-table-large"></i> Table Data Controll 
-          <button type="nutton" id="add-more" class="waves-effect eaves-light btn right green lighten-1" onClick="createNew();"><i class="mdi mdi mdi-plus mdi-32px right"></i> Tambah Data</button>
+          <button type="nutton" id="add-more" class="refresh waves-effect eaves-light btn right green lighten-1"><i class="mdi mdi mdi-refresh mdi-32px right"></i> Refresh Data</button>
         </div>
           <table class="stiped centered">
              <thead>
       	         <tr>
-                  <th>Tanggal dan waktu</th>
-      		        <th>Temperatur</th>
-      		        <th>Sensor</th>
-                  <th>Action</th>
+      		        <th>Device</th>
+      		        <th>Value</th>
       	         </tr>
              </thead>
 
-             <tbody id="table-body">
-              <?php 
-               if(!empty($logs))
-               {
-                foreach ($logs as $l) {
-                  ?>
-                   <tr class="table-row" id="table-row-<?php echo $l["id"]; ?>">
-                    <td><?php echo $l['timestamp']; ?></td>
-                    <td><?php echo $l["temperatur"]; ?></td>
-                    <td><?php echo $l["moisture"]; ?></td>
-                    <td><a href="#" class="btn btn-flat" onclick="deleteRecord(<?php echo $l["id"]; ?>);"><i class="mdi mdi-delete"></i></a></td>
-                   </tr>
-              <?php
-                 }
-                }
-               ?>
+             <tbody>
+                  <tr>
+                   <td><div id="headr2"></div></td>
+                   <td><div id="heading"></div></td>
+                  <td></td>
+                 </tr>
              </tbody>
         </table>
     </div>
@@ -199,7 +187,6 @@ $no=1;
 
 </div>
 
-
 <script type="text/javascript" src="assets/js/bin//materialize.min.js"></script>
 <script type="text/javascript" src="assets/js/tether.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
@@ -208,7 +195,7 @@ $no=1;
 </body>
 <footer>
     <div class="footer-copyright" style="padding-left:15px;">
-            © <?php echo date('Y') ?> <a href="#">Depisi Ristek HMTI</a> All rights reserved
+            © <?php echo date('Y') ?> <a href="#">Divisi Ristek HMTI</a> All rights reserved
     </div>
 </footer>
 </html>
