@@ -7,5 +7,5 @@ Ikhsan <br>
 Hadi <br>
 Yeko <br>
 
-Arduino pin : D2-D9 = Relay1-relay8
+Arduino pin : D2-D9 = Relay1-relay8 <br>
 	      A0    = DHT 22
