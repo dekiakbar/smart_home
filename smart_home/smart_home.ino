@@ -1,3 +1,8 @@
+#include "DHT.h"
+#define Spin A0
+#define DHTTYPE DHT22
+DHT dht(Spin, DHTTYPE);
+
 String ambilchar = "";
 char baper[8];
 const int r1=2;
@@ -11,6 +16,7 @@ const int r8=9;
 
 void setup(){
   Serial.begin(38400);
+  dht.begin();
   ambilchar.reserve(8);
   pinMode(r1, OUTPUT);
   pinMode(r2, OUTPUT);
@@ -27,14 +33,31 @@ void loop(){
    ambilchar = Serial.readString();
    ambilchar.toCharArray(baper,8);
   }
-  
-  kontrolRelay();
-  //Serial.println(ambilchar);
-  Serial.print("50");
-  Serial.print(",");
-  Serial.println("10");
   delay(1000);
-  
+  kontrolRelay();
+  Serial.print(bacaSuhu());
+  Serial.print(",");
+  Serial.print(bacaKelembaban());
+  Serial.print(",");
+  Serial.print("hujan");
+  Serial.print(",");
+  Serial.print("cahaya");
+  Serial.print(",");
+  Serial.print("pintu");
+  Serial.print(",");
+  Serial.println("air");
+}
+
+float bacaSuhu(){
+  float suhu;
+  suhu = dht.readTemperature();
+  return suhu;
+}
+
+float bacaKelembaban(){
+  float kelembaban;
+  kelembaban = dht.readHumidity();
+  return kelembaban;
 }
 
 void kontrolRelay(){

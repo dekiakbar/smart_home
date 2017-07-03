@@ -47,16 +47,29 @@ html, body {
 .arduino-switch table {
 	width: 400px;
 }
-.arduino-right-img {
+.arduino-img img{
+  height: auto;
+  width: 300px;
+  float: right;
+  margin-top:180px;
+}
+.arduino-logo img{
+  height: 100px;
+  width: auto;
+  float: right;
+  margin: 20px -200px auto auto;
+}
+.arduino-switch {
     position: absolute;
-    top: 54%;
-    left: 82%;
+    margin-top: 7.9em;
+    left: 58%;
+    font-size: 20px;
+    font-weight: 500;
 }
-.arduino-right-img img {
-    width: 280px;
-    height: auto;
+.arduino-header {
+  margin-top: -40px;
+  padding: 0;
 }
-
 footer {
   position: absolute;
   top: 100%;

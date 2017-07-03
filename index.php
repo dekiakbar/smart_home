@@ -1,12 +1,3 @@
-
-<?php
-require_once("conf/config.php");
-$db_handle = new config();
-
-$sql = "SELECT * from data_log";
-$logs = $db_handle->runSelectQuery($sql);
-$no=1;
-?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -25,21 +16,9 @@ $no=1;
   <script type="text/javascript" src="assets/js/jQuery-2.1.4.min.js"></script>
   <script type="text/javascript" src="assets/js/jquery.form.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-<style type="text/css">
-.arduino-switch {
-    position: absolute;
-    margin-top: 9.3em;
-    left: 58%;
-    font-size: 20px;
-    font-weight: 500;
-}
-</style>
 </head>
 <body>
-
-  
-  <div class="arduino-right-img">
+  <div class="arduino-img">
     <img src="assets/img/icon/03.png">
   </div>
   <div class="arduino-header">
@@ -47,8 +26,9 @@ $no=1;
 	 <h5 class="blue-text text-darken-1">Arduino</h5>
 	 <span class="red-text text-lighten-2">Web Controll</span>
   </div>
-
-
+  <div class="arduino-logo">
+    <img src="assets/img/icon/rpiardu.jpg">
+  </div>
 
   <div class="container">
   	<div class="arduino-body">
@@ -59,7 +39,7 @@ $no=1;
              <thead>
       	         <tr>
       		        <th>Device</th>
-      		        <th>Value</th>
+      		        <th>State</th>
       	         </tr>
              </thead>
 
@@ -70,8 +50,28 @@ $no=1;
                   <td></td>
                  </tr>
                  <tr>
-                   <td>Kelembaban</td>
+                   <td>Humidity</td>
                    <td><div id="kelembaban"></div></td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                   <td>Rain Sensor</td>
+                   <td><div id="hujan"></div></td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                   <td>Light Sensor</td>
+                   <td><div id="cahaya"></div></td>
+                  <td></td>
+                 </tr>
+                 <tr>
+                   <td>Garage Door</td>
+                   <td><div id="pintu"></div></td>
+                  <td></td>
+                 </tr>
+                  <tr>
+                   <td>Water Sensor</td>
+                   <td><div id="air"></div></td>
                   <td></td>
                  </tr>
              </tbody>
@@ -199,7 +199,7 @@ $no=1;
 <script type="text/javascript" src="assets/js/arduino-javascript.js"></script>
 </body>
 <footer>
-    <div class="footer-copyright" style="padding-left:15px;">
+    <div class="footer-copyright" style="text-align: center">
             © <?php echo date('Y') ?> <a href="#">Divisi Ristek HMTI</a> All rights reserved
     </div>
 </footer>

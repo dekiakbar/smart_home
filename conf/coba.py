@@ -3,7 +3,7 @@
 import serial 
 import sys
 
-device = '/dev/ttyACM1' 
+device = '/dev/ttyACM0' 
 try:
   arduino = serial.Serial(device, 38400) 
 except: 

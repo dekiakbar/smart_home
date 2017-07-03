@@ -204,8 +204,5 @@ $ambil = $konfig->fetchArray($sql);
 $kondisi = $ambil["kondisi"];
 $serial->sendMessage($kondisi);
 $serial->deviceClose();
-
 $serial->confBaudRate(38400);
-
-
 ?>

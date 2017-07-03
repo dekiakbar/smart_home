@@ -7,10 +7,18 @@
       success:function(data)
       {
         var data = eval(data);
-      mesr2  = data.mesr2;
+      kel  = data.kel;
       temp  = data.temp;
+      hujan = data.hujan;
+      cahaya = data.cahaya;
+      pintu = data.pintu;
+      air = data.air;
       $('#temp').html(temp);
-      $('#kelembaban').html(mesr2);
+      $('#kelembaban').html(kel);
+      $('#hujan').html(hujan);
+      $('#cahaya').html(cahaya);
+      $('#pintu').html(pintu);
+      $('#air').html(air);
       }
     });
 });
