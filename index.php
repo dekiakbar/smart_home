@@ -149,7 +149,7 @@ footer a {
 }
 .switch label input[type=checkbox]:checked + .lever {
   background-color: #A5D6A7;
-  height: 70px;
+  height: 15px;
 }
 
 .switch label input[type=checkbox]:checked + .lever:after {
