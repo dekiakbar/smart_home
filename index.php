@@ -63,6 +63,7 @@ html, body {
 .arduino-body thead {
   position: absolute;
   margin-left: 10px;
+  border: none;
 }
 .arduino-body tbody .result-body {
   position: absolute;
@@ -97,6 +98,7 @@ html, body {
 .arduino-switch thead {
   position: absolute;
   margin: 0 10px;
+  border: none;
 }
 .arduino-switch tbody {
   position: absolute;
@@ -212,7 +214,7 @@ footer a {
              </tbody>
         </table>
     </div>
- </div>
+  </div>
 
   <div class="arduino-switch">
      <form id="myForm" name="myform" >
@@ -314,13 +316,11 @@ footer a {
     </form> 
   </div>
 
-</div>
-
-<script type="text/javascript" src="assets/js/bin//materialize.min.js"></script>
-<script type="text/javascript" src="assets/js/tether.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/sweetalert.min.js"></script>
-<script type="text/javascript" src="assets/js/arduino-javascript.js"></script>
+  <script type="text/javascript" src="assets/js/bin//materialize.min.js"></script>
+  <script type="text/javascript" src="assets/js/tether.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/sweetalert.min.js"></script>
+  <script type="text/javascript" src="assets/js/arduino-javascript.js"></script>
 </body>
 <footer>
     <div class="footer-copyright">
