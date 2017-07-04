@@ -17,7 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <style type="text/css">
-    html, body {
+html, body {
   background: url(assets/img/background.png) no-repeat;
   background-size: cover;
   font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -103,7 +103,7 @@
   margin: 6em 2em;
 }
 .arduino-switch .label-relay {
-  font-size: 25px;
+  font-size: 20px;
 }
 .arduino-img img{
   height: auto;
@@ -129,6 +129,7 @@ footer {
   background: url(assets/img/footer-bar.png) no-repeat;
   color:#000;
   line-height: 70px;
+  margin-top: 100px;
 }
 footer a {
   color: #ffffff;
@@ -140,8 +141,10 @@ footer a {
   font-size: 20px;
 }
 .footer-copyright img {
+  height: auto;
+  width: 350px;
   position: absolute;
-  margin: -16px;
+  margin: 0px;
   left: 67%;
 }
 .switch label input[type=checkbox]:checked + .lever {
@@ -226,7 +229,7 @@ footer a {
                      <input type="checkbox" id="r1" class="relay" name="relay1" data-name="relay1">
                      <span class="lever"></span>
                      On
-                   </labekl>
+                   </label>
                  </div>
               </td>
               <td class="label-relay">Relay 2</td>
@@ -236,7 +239,7 @@ footer a {
                      <input type="checkbox" id="r2" class="relay"  name="relay2" data-name="relay2">
                      <span class="lever"></span>
                      On
-                   </labekl>
+                   </label>
                  </div>
               </td>
             </tr>
@@ -248,7 +251,7 @@ footer a {
                      <input type="checkbox" id="r3" class="relay"  name="relay3" data-name="relay3">
                      <span class="lever"></span>
                      On
-                   </labekl>
+                   </label>
                  </div>
               </td>
               <td class="label-relay">Relay 4</td>
@@ -258,7 +261,7 @@ footer a {
                      <input type="checkbox" id="r4" class="relay"  name="relay4" data-name="relay4">
                      <span class="lever"></span>
                      On
-                   </labekl>
+                   </label>
                  </div>
               </td>
             </tr>
@@ -270,7 +273,7 @@ footer a {
                      <input type="checkbox" id="r5" class="relay"  name="relay5" data-name="relay5">
                      <span class="lever"></span>
                      On
-                   </labekl>
+                   </label>
                  </div>
               </td>
               <td class="label-relay">Relay 6</td>
@@ -280,7 +283,7 @@ footer a {
                      <input type="checkbox" id="r6" class="relay"  name="relay6" data-name="relay6">
                      <span class="lever"></span>
                      On
-                   </labekl>
+                   </label>
                  </div>
               </td>
             </tr>
@@ -292,7 +295,7 @@ footer a {
                      <input type="checkbox" id="r7" class="relay"  name="relay7" data-name="relay7">
                      <span class="lever"></span>
                      On
-                   </labekl>
+                   </label>
                  </div>
               </td>
               <td class="label-relay">Relay 8</td>
@@ -302,7 +305,7 @@ footer a {
                      <input type="checkbox" id="r8" class="relay"  name="relay8" data-name="relay8">
                      <span class="lever"></span>
                      On
-                   </labekl>
+                   </label>
                  </div>
               </td>
             </tr>
@@ -321,8 +324,7 @@ footer a {
 </body>
 <footer>
     <div class="footer-copyright">
-            <?php echo date('Y') ?> © <a href="#">dept..ristek.hmti</a> All rights reserved
-            <img src="assets/img/footer-02.png">
+      <?php echo date('Y') ?> © <a href="#">dept.ristek.hmti</a> All rights reserved<img src="assets/img/footer-02.png">
     </div>
 </footer>
 </html>
