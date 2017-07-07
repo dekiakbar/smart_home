@@ -14,7 +14,8 @@ const int r6=7;
 const int r7=8;
 const int r8=9;
 
-int S_Hujan=A2;
+int S_Hujan=A1;
+const int S_Cahaya=A2;
 
 void setup(){
   Serial.begin(38400);
@@ -29,6 +30,7 @@ void setup(){
   pinMode(r7, OUTPUT);
   pinMode(r8, OUTPUT);
   pinMode(S_Hujan, INPUT);
+  pinMode(S_Cahaya, INPUT);
 }
 
 void loop(){
@@ -44,7 +46,7 @@ void loop(){
   Serial.print(",");
   Serial.print(Hujan());
   Serial.print(",");
-  Serial.print("cahaya");
+  Serial.print(Cahaya());
   Serial.print(",");
   Serial.print("pintu");
   Serial.print(",");
@@ -65,17 +67,32 @@ float bacaKelembaban(){
 
 String Hujan(){
   int NS_Hujan;
-  String status="";
+  String statHujan="";
   NS_Hujan = analogRead(S_Hujan);
-  if (NS_Hujan >= 900 && NS_Hujan <= 1023 ){
-    status = "Hujan Rintik";
-  }else if (NS_Hujan >= 500 && NS_Hujan <= 900 ){
-    status = "Hujan";
-  }else if (NS_Hujan <= 499){
-    status = "Hujan Deras";
+  if (NS_Hujan >= 990 ){
+    statHujan = "Tidak Hujan";
+  }else if (NS_Hujan >= 801 && NS_Hujan <= 989 ){
+    statHujan = "Hujan Rintik";
+  }else if (NS_Hujan >= 401 && NS_Hujan <= 800 ){
+    statHujan = "Hujan";
+  }else if (NS_Hujan <= 400){
+    statHujan = "Hujan Deras";
   } 
-  return status;
+  return statHujan;
 }
+
+String Cahaya(){
+  String statCahaya ="";
+  int bacaCahaya;
+  bacaCahaya = digitalRead(S_Cahaya);
+  if (bacaCahaya == LOW){
+    statCahaya = "Terang";
+  }else if (bacaCahaya == HIGH){
+    statCahaya = "Gelap";
+  }
+  return statCahaya;
+}
+
 
 void kontrolRelay(){
   if (ambilchar[0] == '1'){
