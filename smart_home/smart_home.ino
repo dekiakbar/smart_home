@@ -69,6 +69,7 @@ String Hujan(){
   int NS_Hujan;
   String statHujan="";
   NS_Hujan = analogRead(S_Hujan);
+  
   if (NS_Hujan >= 990 ){
     statHujan = "Tidak Hujan";
   }else if (NS_Hujan >= 801 && NS_Hujan <= 989 ){
@@ -85,6 +86,7 @@ String Cahaya(){
   String statCahaya ="";
   int bacaCahaya;
   bacaCahaya = digitalRead(S_Cahaya);
+  
   if (bacaCahaya == LOW){
     statCahaya = "Terang";
   }else if (bacaCahaya == HIGH){
