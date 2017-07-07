@@ -8,4 +8,7 @@ Hadi <br>
 Yeko <br>
 
 Arduino pin : D2-D9 = Relay1-relay8 <br>
-	      A0    = DHT 22
+	      A0    = DHT 22 <br>
+	      A1    = Rain Sensor <br>
+	      A2    = Light Sensor <br>
+	      A3    = Water Level Sensor <br>
