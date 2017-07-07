@@ -14,6 +14,8 @@ const int r6=7;
 const int r7=8;
 const int r8=9;
 
+int S_Hujan=A2;
+
 void setup(){
   Serial.begin(38400);
   dht.begin();
@@ -26,6 +28,7 @@ void setup(){
   pinMode(r6, OUTPUT);
   pinMode(r7, OUTPUT);
   pinMode(r8, OUTPUT);
+  pinMode(S_Hujan, INPUT);
 }
 
 void loop(){
@@ -39,7 +42,7 @@ void loop(){
   Serial.print(",");
   Serial.print(bacaKelembaban());
   Serial.print(",");
-  Serial.print("hujan");
+  Serial.print(Hujan());
   Serial.print(",");
   Serial.print("cahaya");
   Serial.print(",");
@@ -58,6 +61,20 @@ float bacaKelembaban(){
   float kelembaban;
   kelembaban = dht.readHumidity();
   return kelembaban;
+}
+
+String Hujan(){
+  int NS_Hujan;
+  String status="";
+  NS_Hujan = analogRead(S_Hujan);
+  if (NS_Hujan >= 900 && NS_Hujan <= 1023 ){
+    status = "Hujan Rintik";
+  }else if (NS_Hujan >= 500 && NS_Hujan <= 900 ){
+    status = "Hujan";
+  }else if (NS_Hujan <= 499){
+    status = "Hujan Deras";
+  } 
+  return status;
 }
 
 void kontrolRelay(){
