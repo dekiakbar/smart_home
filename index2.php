@@ -30,7 +30,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-6" style="background: url(assets/img/layout.png);background-position: cover;">
-			<table>
+			<table class="responsive-table">
 				<thead>
 					<th><i class="icon"><img src="assets/img/element/Data-device-LOGO.png"></i></th>
 				</thead>
@@ -72,7 +72,15 @@
 			</table>
 		</div>
 
-		<div class="col-sm-6" style="background: url(assets/img/layout.png);background-position: cover;"></div>
+		<div class="col-sm-6" style="background: url(assets/img/layout.png);background-position: cover;">
+			<form>
+				<table class="responsive-table">
+					<thead>
+						<i class="icon"><img src="assets/img/element/switch-control relay-01-LOGO.png"></i>
+					</thead>
+				</table>
+			</form>
+		</div>
 	</div>
 </div>
 </body>
