@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/materialdesignicons.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/sweetalert.css">
-  
+
   <script type="text/javascript" src="assets/js/jQuery-2.1.4.min.js"></script>
   <script type="text/javascript" src="assets/js/jquery.form.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -224,7 +224,7 @@ footer a {
           </thead>
           <tbody>
             <tr>
-              <td class="label-relay">Relay 1</td>
+              <td class="">Relay 1</td>
               <td>
                  <div class="switch">
                    <label>Off
