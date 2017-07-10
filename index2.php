@@ -19,8 +19,8 @@
   		.form-group{
   			margin: 0 auto;
   		}
-  		td .icon img {
-  			max-width: 200px;
+  		.logo i img {
+  			max-width: 50px;
   			height: auto;
   		}
   	</style>
@@ -39,15 +39,62 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6" style="background: url(assets/img/layout.png) no-repeat;background-position: cover;">
-				<div class="container-fluid">
-					<i class="icon"><img class="img-responsive" src="assets/img/element/Data-device-LOGO.png"></i>
-					<div class=""></div>
+				<div class="text-center">
+					<h4><i class="icon"><img class="img-responsive" src="assets/img/element/Data-device-LOGO.png"></i> Data Device</h4>
+					<div class="row logo">
+						<div class="col-sm-6">
+							<i class="icon"><img src="assets/img/element/Data-device-temp.png"></i>Temperature :
+						</div>
+						<div class="col-sm-6">
+							<div id="temp"></div>
+						</div>
+					</div>
+					<div class="row logo">
+						<div class="col-sm-6">
+							<i class="icon"><img src="assets/img/element/Data-device-hum.png"></i>Humididty :
+						</div>
+						<div class="col-sm-6">
+							<div id="temp"></div>
+						</div>
+					</div>
+					<div class="row logo">
+						<div class="col-sm-6">
+							<i class="icon"><img src="assets/img/element/Data-device-light.png"></i>Light Sensor :
+						</div>
+						<div class="col-sm-6">
+							<div id="temp"></div>
+						</div>
+					</div>
+					<div class="row logo">
+						<div class="col-sm-6">
+							<i class="icon"><img src="assets/img/element/Data-device-wat.png"></i>Water Sensor :
+						</div>
+						<div class="col-sm-6">
+							<div id="temp"></div>
+						</div>
+					</div>
+					<div class="row logo">
+						<div class="col-sm-6">
+							<i class="icon"><img src="assets/img/element/Data-device-gar.png"></i> Garage's Door :
+						</div>
+						<div class="col-sm-6">
+							<div id="temp"></div>
+						</div>
+					</div>
+					<div class="row logo">
+						<div class="col-sm-6">
+							<i class="icon"><img src="assets/img/element/Data-device-rain.png"></i>Rain Sensor :
+						</div>
+						<div class="col-sm-6">
+							<div id="temp"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 
 			<div class="col-sm-6" style="background: url(assets/img/layout.png) no-repeat;background-position: cover;">
-				<div class="container-fluid">
-					<i class="icon"><img class="img-responsive" src="assets/img/element/switch-control relay-01-LOGO.png"></i>
+				<div class="container-fluid text-center">
+					<h4><i class="icon"><img class="img-responsive" src="assets/img/element/switch-control relay-01-LOGO.png"></i>Switch Control</h4>
 					<form class="form-inline">
 							<div class="form-group">
 								<h5>Relay 1 </h5>
