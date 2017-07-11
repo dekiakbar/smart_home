@@ -60,7 +60,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6" style="background: url(assets/img/layout.png) no-repeat;background-position: cover;">
+			<div class="col-sm-6" style="background: url(assets/img/layout.png) no-repeat;background-size: cover;">
 				<div class="container-fluid text-center">
 					<h4><i class="icon"><img class="img-responsive" src="assets/img/element/Data-device-LOGO.png"></i> Data Device</h4>
 					<div class="row logo">
@@ -119,10 +119,9 @@
 				</div>
 			</div>
 
-			<div class="col-sm-6" style="background: url(assets/img/layout.png) no-repeat;background-position: cover;">
+			<div class="col-sm-6" style="background: url(assets/img/layout.png) no-repeat;background-size: cover;">
 				<div class="container-fluid text-center">
 					<h4><i class="icon"><img class="img-responsive" src="assets/img/element/switch-control relay-01-LOGO.png"></i>Switch Control</h4>
-					<br>
 					<form class="form-inline">
 						<div class="form-group">
 							<h5>Relay 1 </h5>
