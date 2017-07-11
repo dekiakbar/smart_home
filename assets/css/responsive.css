@@ -55,4 +55,7 @@
 		width: 25px;
 		height: 25px;
 	}
+	.container-fluid .form-inline .form-group h5{
+		font-size: 15px;
+	}
 }
