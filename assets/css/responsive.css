@@ -27,6 +27,9 @@
 		margin:0 auto;
 		padding: 0px 5px;
 	}
+	.container-fluid .form-inline .form-group h5{
+		font-size: 15px;
+	}
 
 }
 
@@ -57,5 +60,9 @@
 	}
 	.container-fluid .form-inline .form-group h5{
 		font-size: 15px;
+	}
+	.container-fluid .form-inline .form-group{
+		margin:0 auto;
+		padding: 0px 5px;
 	}
 }
