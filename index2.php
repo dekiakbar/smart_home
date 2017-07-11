@@ -8,6 +8,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+  	<link rel="stylesheet" type="text/css" href="assets/css/arduino-style.css">
   	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
   	<link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css" />
   	<link rel="stylesheet" type="text/css" href="assets/css/materialdesignicons.min.css" />
@@ -17,38 +18,11 @@
   	<script type="text/javascript" src="assets/js/jquery.form.min.js"></script>
   	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   	<style type="text/css">
-  		.form-group{
-  			margin: 0 auto;
-  		}
-  		.logo i img {
-  			max-width: 50px;
-  			max-height: 50px;
-  		}
-  		.col-sm-4{
-  			background-color: #1190e5;
-  		}
-  		.row{
-  			font-size: 22px;
-  		}
-  		footer{
-  			background-color: #1190e5; 
-    		bottom: 0;
-    		width: 100%;
-  		}
-  		.form-group{
-  			margin:7px auto;
-  		}
-  		h4 i img{
-  			max-width: 70px;
-  			max-height: 70px;
-  		}
-  		h4{
-  			font-size:35px; 
-  		}
+  		
   	</style>
 
 </head>
-<body style="background: url(assets/img/background.png);">
+<body>
 
 	<header>
 		<div class="container-fluid">
@@ -60,7 +34,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6" style="background: url(assets/img/layout.png) no-repeat;background-size: cover;">
+			<div class="col-sm-6">
 				<div class="container-fluid text-center">
 					<h4><i class="icon"><img class="img-responsive" src="assets/img/element/Data-device-LOGO.png"></i> Data Device</h4>
 					<div class="row logo">
@@ -113,13 +87,13 @@
 					</div>
 					<div class="row">
 						<div class="col-sm-12 text-center">
-							<button type="button" id="add-more" class="refresh waves-effect eaves-light btn blue darken-4" style="width:200px;"><i class="mdi mdi mdi-refresh mdi-32px right"></i> Refresh Data</button>
+							<button type="button" id="add-more" class="refresh waves-effect eaves-light btn blue darken-4"><i class="mdi mdi mdi-refresh mdi-32px right"></i> Refresh Data</button>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-sm-6" style="background: url(assets/img/layout.png) no-repeat;background-size: cover;">
+			<div class="col-sm-6">
 				<div class="container-fluid text-center">
 					<h4><i class="icon"><img class="img-responsive" src="assets/img/element/switch-control relay-01-LOGO.png"></i>Switch Control</h4>
 					<form class="form-inline">

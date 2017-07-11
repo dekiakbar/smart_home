@@ -3,6 +3,10 @@
   background-size: cover;
   font-family: 'Lato', Calibri, Arial, sans-serif;
 }
+.container .row .col-sm-6{
+  background: url(../img/layout.png) no-repeat;
+  background-size: cover;
+}
 .form-group{
   margin: 0 auto;
 }
@@ -30,4 +34,7 @@ h4 i img{
 }
 h4{
   font-size:35px; 
+}
+button {
+  width: 200px;
 }
