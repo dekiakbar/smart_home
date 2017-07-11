@@ -7,6 +7,7 @@
   	<meta name="description" content="demonstration of some noty capabilities">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+  	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
   	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
   	<link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css" />
   	<link rel="stylesheet" type="text/css" href="assets/css/materialdesignicons.min.css" />
@@ -21,7 +22,28 @@
   		}
   		.logo i img {
   			max-width: 50px;
-  			height: auto;
+  			max-height: 50px;
+  		}
+  		.col-sm-4{
+  			background-color: #1190e5;
+  		}
+  		.row{
+  			font-size: 22px;
+  		}
+  		footer{
+  			background-color: #1190e5; 
+    		bottom: 0;
+    		width: 100%;
+  		}
+  		.form-group{
+  			margin:7px auto;
+  		}
+  		h4 i img{
+  			max-width: 70px;
+  			max-height: 70px;
+  		}
+  		h4{
+  			font-size:35px; 
   		}
   	</style>
 
@@ -39,54 +61,59 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6" style="background: url(assets/img/layout.png) no-repeat;background-position: cover;">
-				<div class="text-center">
+				<div class="container-fluid text-center">
 					<h4><i class="icon"><img class="img-responsive" src="assets/img/element/Data-device-LOGO.png"></i> Data Device</h4>
 					<div class="row logo">
-						<div class="col-sm-6">
+						<div class="col-sm-8">
 							<i class="icon"><img src="assets/img/element/Data-device-temp.png"></i>Temperature :
 						</div>
-						<div class="col-sm-6">
-							<div id="temp"></div>
+						<div class="col-sm-4">
+							<div id="temp" class="status">34.56 C</div>
 						</div>
 					</div>
 					<div class="row logo">
-						<div class="col-sm-6">
-							<i class="icon"><img src="assets/img/element/Data-device-hum.png"></i>Humididty :
+						<div class="col-sm-8">
+							<i class="icon"><img src="assets/img/element/Data-device-hum.png"></i>Humidity :
 						</div>
-						<div class="col-sm-6">
-							<div id="temp"></div>
+						<div class="col-sm-4 text-center">
+							<div id="kelembaban" class="status">100%</div>
 						</div>
 					</div>
 					<div class="row logo">
-						<div class="col-sm-6">
+						<div class="col-sm-8">
 							<i class="icon"><img src="assets/img/element/Data-device-light.png"></i>Light Sensor :
 						</div>
-						<div class="col-sm-6">
-							<div id="temp"></div>
+						<div class="col-sm-4 text-center">
+							<div id="hujan" class="status">100%</div>
 						</div>
 					</div>
 					<div class="row logo">
-						<div class="col-sm-6">
+						<div class="col-sm-8">
 							<i class="icon"><img src="assets/img/element/Data-device-wat.png"></i>Water Sensor :
 						</div>
-						<div class="col-sm-6">
-							<div id="temp"></div>
+						<div class="col-sm-4 text-center">
+							<div id="cahaya" class="status">100%</div>
 						</div>
 					</div>
 					<div class="row logo">
-						<div class="col-sm-6">
+						<div class="col-sm-8">
 							<i class="icon"><img src="assets/img/element/Data-device-gar.png"></i> Garage's Door :
 						</div>
-						<div class="col-sm-6">
-							<div id="temp"></div>
+						<div class="col-sm-4 text-center">
+							<div id="pintu" class="status">Open</div>
 						</div>
 					</div>
 					<div class="row logo">
-						<div class="col-sm-6">
+						<div class="col-sm-8">
 							<i class="icon"><img src="assets/img/element/Data-device-rain.png"></i>Rain Sensor :
 						</div>
-						<div class="col-sm-6">
-							<div id="temp"></div>
+						<div class="col-sm-4 text-center">
+							<div id="air" class="status">Rain</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<button type="button" id="add-more" class="refresh waves-effect eaves-light btn blue darken-4" style="width:200px;"><i class="mdi mdi mdi-refresh mdi-32px right"></i> Refresh Data</button>
 						</div>
 					</div>
 				</div>
@@ -95,83 +122,95 @@
 			<div class="col-sm-6" style="background: url(assets/img/layout.png) no-repeat;background-position: cover;">
 				<div class="container-fluid text-center">
 					<h4><i class="icon"><img class="img-responsive" src="assets/img/element/switch-control relay-01-LOGO.png"></i>Switch Control</h4>
+					<br>
 					<form class="form-inline">
-							<div class="form-group">
-								<h5>Relay 1 </h5>
-								<div class="switch">
-									<label>
-									<input type="checkbox" name="relay1" class="relay" data-name="relay1" id="r1">
-									<span class="lever"></span>
-									</label>
-								</div>
+						<div class="form-group">
+							<h5>Relay 1 </h5>
+							<div class="switch">
+								<label>
+								<input type="checkbox" name="relay1" class="relay" data-name="relay1" id="r1">
+								<span class="lever"></span>
+								</label>
 							</div>
-							<div class="form-group">
-								<h5>Relay 2 </h5>
-								<div class="switch">
-									<label>
-									<input type="checkbox" name="relay2" class="relay" data-name="relay2" id="r2">
-									<span class="lever"></span>
-									</label>
-								</div>
+						</div>
+						<div class="form-group">
+							<h5>Relay 2 </h5>
+							<div class="switch">
+								<label>
+								<input type="checkbox" name="relay2" class="relay" data-name="relay2" id="r2">
+								<span class="lever"></span>
+								</label>
 							</div>
-							<div class="form-group">
-								<h5>Relay 3 </h5>
-								<div class="switch">
-									<label>
-									<input type="checkbox" name="relay3" class="relay" data-name="relay3" id="r3">
-									<span class="lever"></span>
-									</label>
-								</div>
+						</div>
+						<div class="form-group">
+							<h5>Relay 3 </h5>
+							<div class="switch">
+								<label>
+								<input type="checkbox" name="relay3" class="relay" data-name="relay3" id="r3">
+								<span class="lever"></span>
+								</label>
 							</div>
-							<div class="form-group">
-								<h5>Relay 4 </h5>
-								<div class="switch">
-									<label>
-									<input type="checkbox" name="relay4" class="relay" data-name="relay4" id="r4">
-									<span class="lever"></span>
-									</label>
-								</div>
+						</div>
+						<div class="form-group">
+							<h5>Relay 4 </h5>
+							<div class="switch">
+								<label>
+								<input type="checkbox" name="relay4" class="relay" data-name="relay4" id="r4">
+								<span class="lever"></span>
+								</label>
 							</div>
-							<div class="form-group">
-								<h5>Relay 5 </h5>
-								<div class="switch">
-									<label>
-									<input type="checkbox" name="relay5" class="relay" data-name="relay5" id="r5">
-									<span class="lever"></span>
-									</label>
-								</div>
+						</div>
+						<div class="form-group">
+							<h5>Relay 5 </h5>
+							<div class="switch">
+								<label>
+								<input type="checkbox" name="relay5" class="relay" data-name="relay5" id="r5">
+								<span class="lever"></span>
+								</label>
 							</div>
-							<div class="form-group">
-								<h5>Relay 6 </h5>
-								<div class="switch">
-									<label>
-									<input type="checkbox" name="relay6" class="relay" data-name="relay6" id="r6">
-									<span class="lever"></span>
-									</label>
-								</div>
+						</div>
+						<div class="form-group">
+							<h5>Relay 6 </h5>
+							<div class="switch">
+								<label>
+								<input type="checkbox" name="relay6" class="relay" data-name="relay6" id="r6">
+								<span class="lever"></span>
+								</label>
 							</div>
-							<div class="form-group">
-								<h5>Relay 7 </h5>
-								<div class="switch">
-									<label>
-									<input type="checkbox" name="relay7" class="relay" data-name="relay7" id="r7">
-									<span class="lever"></span>
-									</label>
-								</div>
+						</div>
+						<div class="form-group">
+							<h5>Relay 7 </h5>
+							<div class="switch">
+								<label>
+								<input type="checkbox" name="relay7" class="relay" data-name="relay7" id="r7">
+								<span class="lever"></span>
+								</label>
 							</div>
-							<div class="form-group">
-								<h5>Relay 8 </h5>
-								<div class="switch">
-									<label>
-									<input type="checkbox" name="relay8" class="relay" data-name="relay8" id="r8">
-									<span class="lever"></span>
-									</label>
-								</div>
+						</div>
+						<div class="form-group">
+							<h5>Relay 8 </h5>
+							<div class="switch">
+								<label>
+								<input type="checkbox" name="relay8" class="relay" data-name="relay8" id="r8">
+								<span class="lever"></span>
+								</label>
 							</div>
+						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- 
+	<footer>
+      		<?php echo date('Y') ?> © <a href="#">dept.ristek.hmti</a> All rights reserved
+				<img src="assets/img/footer-02.png">
+	</footer>
+	 -->
+	<script type="text/javascript" src="assets/js/bin//materialize.min.js"></script>
+ 	<script type="text/javascript" src="assets/js/tether.min.js"></script>
+  	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="assets/js/sweetalert.min.js"></script>
+  	<script type="text/javascript" src="assets/js/arduino-javascript.js"></script>
 </body>
 </html>
