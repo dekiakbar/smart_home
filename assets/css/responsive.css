@@ -36,3 +36,23 @@
 		padding: 0px 10px;
 	}
 }
+
+@media (min-width: 561px) and (max-width: 768px) {
+	h4 i img{
+		width: 33px;
+		height: 33px;
+	}
+	.container-fluid h4 {
+		font-size: 24px;
+	}
+	.col-sm-8{
+		font-size: 13px;
+	}
+	.col-sm-4{
+		font-size: 13px;
+	}
+	.logo i img{
+		width: 25px;
+		height: 25px;
+	}
+}
