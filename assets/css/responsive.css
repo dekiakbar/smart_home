@@ -40,7 +40,7 @@
 	}
 }
 
-@media (min-width: 561px) and (max-width: 768px) {
+@media (min-width: 561px) and (max-width: 750px) {
 	h4 i img{
 		width: 33px;
 		height: 33px;
@@ -64,5 +64,51 @@
 	.container-fluid .form-inline .form-group{
 		margin:0 auto;
 		padding: 0px 5px;
+	}
+}
+
+@media (min-width: 747px) and (max-width: 800px) {
+	h4 i img{
+		width: 33px;
+		height: 33px;
+	}
+	.container-fluid h4 {
+		font-size: 24px;
+	}
+	.col-sm-8{
+		font-size: 13px;
+	}
+	.col-sm-4{
+		font-size: 13px;
+	}
+	.logo i img{
+		width: 25px;
+		height: 25px;
+	}
+	.container-fluid .form-inline .form-group h5{
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+	h4 i img{
+		width: 35px;
+		height: 35px;
+	}
+	.container-fluid h4 {
+		font-size: 25px;
+	}
+	.col-sm-8{
+		font-size: 15px;
+	}
+	.col-sm-4{
+		font-size: 15px;
+	}
+	.logo i img{
+		width: 27px;
+		height: 27px;
+	}
+	.container-fluid .form-inline .form-group h5{
+		font-size: 17px;
 	}
 }
