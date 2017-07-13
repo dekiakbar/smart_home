@@ -1,4 +1,8 @@
-  html, body {
+@font-face{
+  font-family: 'LazenbyCompSmooth';
+  src: url('../fonts/lazenby_computer/LazenbyCompSmooth.ttf') format('truetype');
+}
+html, body {
   background: url(../img/background.png) no-repeat;
   background-size: cover;
   font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -39,7 +43,7 @@ button {
   width: 200px;
 }
 header h3 {
-  font-family:'Open Sans', sans-serif;
+  font-family:'LazenbyCompSmooth', sans-serif;
   color: #1190e7; 
 }
 footer{

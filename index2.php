@@ -27,7 +27,7 @@
 	<header>
 		<div class="container-fluid">
 			<div class="col-sm-12 text-left">
-				<h3><img class="img-responsive" src="assets/img/logo.png">SMART HOME</h3>
+				<h3><img class="img-responsive" src="assets/img/logo.png"> SMART HOME</h3>
 			</div>
 		</div>	
 	</header>
