@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<title>Arduino Controll</title>
-  	<meta name="description" content="demonstration of some noty capabilities">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
@@ -21,7 +20,7 @@
 
 	<header>
 		<div class="container-fluid">
-			<div class="col-sm-12 text-left">
+			<div class="col-sm-12">
 				<h3><img class="img-responsive" src="assets/img/logo.png"> SMART HOME</h3>
 			</div>
 		</div>	

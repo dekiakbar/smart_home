@@ -1,4 +1,60 @@
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 345px) {
+	header .col-sm-12 {
+		font-size:28px;
+	}
+	header h3 {
+		text-align: center;
+		font-size:28px;
+		margin: 0 auto;
+	}
+	header h3 img{
+		width: 20%;
+		height: 20%;
+	}
+	h4 i img{
+		width: 40px;
+		height: 40px;
+	}
+	.container-fluid .row .col-sm-8{
+		float: center;
+		margin:3px auto;
+	}
+	.container-fluid .row .col-sm-4{
+		margin-left: 15px;
+	}
+	.container-fluid h4 {
+		font-size: 22px;
+	}
+	.logo i img{
+		width: 25px;
+		height: 25px;
+	}
+	.col-sm-8{
+		font-size: 15px;
+	}
+	.col-sm-4{
+		font-size: 15px;
+	}
+	.container-fluid .form-inline .form-group{
+		margin:0 auto;
+		padding: 0px 5px;
+	}
+	.container-fluid .form-inline .form-group h5{
+		font-size: 15px;
+	}
+
+}
+
+@media (min-width:346px ) and (max-width: 560px) {
+	header h3 {
+		text-align: center;
+		font-size:33px;
+		margin: 0 auto;
+	}
+	header h3 img{
+		max-width: 16%;
+		max-height: 16%;
+	}
 	h4 i img{
 		width: 40px;
 		height: 40px;
