@@ -8,7 +8,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
-  	<link rel="stylesheet" type="text/css" href="assets/css/arduino-style.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/arduino-style.css" />
   	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
   	<link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css" />
   	<link rel="stylesheet" type="text/css" href="assets/css/materialdesignicons.min.css" />
@@ -16,11 +16,6 @@
   
   	<script type="text/javascript" src="assets/js/jQuery-2.1.4.min.js"></script>
   	<script type="text/javascript" src="assets/js/jquery.form.min.js"></script>
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  	<style type="text/css">
-  		
-  	</style>
-
 </head>
 <body>
 
@@ -186,7 +181,7 @@
 		</div>
 	</footer>
 	
-	<script type="text/javascript" src="assets/js/bin//materialize.min.js"></script>
+	<script type="text/javascript" src="assets/js/bin/materialize.min.js"></script>
  	<script type="text/javascript" src="assets/js/tether.min.js"></script>
   	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   	<script type="text/javascript" src="assets/js/sweetalert.min.js"></script>
