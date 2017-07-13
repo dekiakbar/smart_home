@@ -27,7 +27,7 @@
 	<header>
 		<div class="container-fluid">
 			<div class="col-sm-12 text-left">
-				<img src="assets/img/logo.png">
+				<h3><img class="img-responsive" src="assets/img/logo.png">SMART HOME</h3>
 			</div>
 		</div>	
 	</header>
@@ -42,7 +42,7 @@
 							<i class="icon"><img src="assets/img/element/Data-device-temp.png"></i>Temperature :
 						</div>
 						<div class="col-sm-4">
-							<div id="temp" class="status">34.56 C</div>
+							<div id="temp" class="status">100.5C</div>
 						</div>
 					</div>
 					<div class="row logo">
@@ -174,12 +174,18 @@
 			</div>
 		</div>
 	</div>
-	<!-- 
+
 	<footer>
-      		<?php echo date('Y') ?> © <a href="#">dept.ristek.hmti</a> All rights reserved
-				<img src="assets/img/footer-02.png">
+		<div class="row">
+			<div class="col-sm-8">
+				<h6><?php echo date('Y') ?> © <a href="#">dept.ristek.hmti</a> All rights reserved</h6>
+			</div>
+			<div class="col-sm-4 text-right">
+				<h5>Supported by <img src="assets/img/footer-02.png"></h5>
+			</div>
+		</div>
 	</footer>
-	 -->
+	
 	<script type="text/javascript" src="assets/js/bin//materialize.min.js"></script>
  	<script type="text/javascript" src="assets/js/tether.min.js"></script>
   	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>

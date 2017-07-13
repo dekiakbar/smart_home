@@ -38,3 +38,30 @@ h4{
 button {
   width: 200px;
 }
+header h3 {
+  font-family:'Open Sans', sans-serif;
+  color: #1190e7; 
+}
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer .row {
+  float: none;
+  margin:0 auto;
+  color: #ffffff;
+}
+footer .row .col-sm-8 h6 {
+  margin: 3.5% 0 0 0;
+  text-decoration: none;
+}
+footer .row .col-sm-8 h6 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer .col-sm-4 img {
+  max-width: 40%;
+  max-height: 20%;
+  margin:0 auto;
+}
