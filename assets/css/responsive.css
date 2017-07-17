@@ -307,3 +307,45 @@
 		height: 15%;
 	}
 }
+@media (min-width: 1367px){
+	h4 i img{
+		width: 43px;
+		height: 43px;
+	}
+	.container-fluid h4 {
+		font-size: 33px;
+	}
+	.col-sm-8{
+		font-size: 20px;
+	}
+	.col-sm-4{
+		font-size: 20px;
+	}
+	.logo i img{
+		width: 34px;
+		height: 34px;
+	}
+	.container-fluid .form-inline .form-group h5{
+		font-size: 24px;
+	}
+	.col-sm-6 .container-fluid .form-inline .form-group{
+		margin:auto 5%;
+	}
+	footer .row .col-sm-8 h6{
+		margin: 2% auto;
+		font-size: 20px;
+	}
+	footer .row .col-sm-4{
+		text-align: right;
+	}
+	footer .row .col-sm-4 h5{
+		font-size: 25px;
+		float: right;
+		margin: 3% auto;
+	}
+	footer .col-sm-4 img{
+		width: 40%;
+		height: 20%;
+	}
+
+}
