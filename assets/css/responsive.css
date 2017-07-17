@@ -42,6 +42,12 @@
 	.container-fluid .form-inline .form-group h5{
 		font-size: 15px;
 	}
+	.container-fluid{
+		margin-bottom: 5%;
+	}
+	footer {
+		margin-top: 5%;
+	}
 	footer .row .col-sm-8 h6{
 		margin: 2% 5%;
 	}
@@ -307,6 +313,7 @@
 		height: 15%;
 	}
 }
+
 @media (min-width: 1367px){
 	h4 i img{
 		width: 43px;
@@ -347,5 +354,4 @@
 		width: 40%;
 		height: 20%;
 	}
-
 }

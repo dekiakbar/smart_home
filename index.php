@@ -169,7 +169,8 @@
 			</div>
 		</div>
 	</div>
- 
+ 	<br>
+ 	<br>
 	<footer>
 		<div class="row">
 			<div class="col-sm-8">
