@@ -42,6 +42,18 @@
 	.container-fluid .form-inline .form-group h5{
 		font-size: 15px;
 	}
+	footer .row .col-sm-8 h6{
+		margin: 2% 5%;
+	}
+	footer .row .col-sm-4 h5{
+		font-size: 20px;
+		float: none;
+		margin:0 18% 2% 18%;
+	}
+	footer .col-sm-4 img{
+		width: 30%;
+		height: 15%;
+	}
 
 }
 
@@ -86,6 +98,18 @@
 	.container-fluid .form-inline .form-group h5{
 		font-size: 15px;
 	}
+	footer .row .col-sm-8 h6{
+		margin: 2% 10%;
+	}
+	footer .row .col-sm-4 h5{
+		font-size: 20px;
+		float: none;
+		margin: 0 20% 2% 20%;
+	}
+	footer .col-sm-4 img{
+		width: 30%;
+		height: 15%;
+	}
 
 }
 
@@ -93,6 +117,18 @@
 	.container-fluid .form-inline .form-group{
 		margin:0 auto;
 		padding: 0px 10px;
+	}
+	footer .row .col-sm-8 h6{
+		margin: 2% auto;
+	}
+	footer .row .col-sm-4 h5{
+		font-size: 20px;
+		float: none;
+		margin:auto;
+	}
+	footer .col-sm-4 img{
+		width: 20%;
+		height: 10%;
 	}
 }
 
@@ -121,6 +157,10 @@
 		margin:0 auto;
 		padding: 0px 5px;
 	}
+	footer .col-sm-4 img{
+		width: 20%;
+		height: 10%;
+	}
 }
 
 @media (min-width: 747px) and (max-width: 800px) {
@@ -144,6 +184,19 @@
 	.container-fluid .form-inline .form-group h5{
 		font-size: 15px;
 	}
+	footer .row .col-sm-8 h6{
+		margin: 2% auto;
+	}
+	footer .row .col-sm-4 h5{
+		font-size: 20px;
+		float: none;
+		margin: 2% auto;
+	}
+	footer .col-sm-4 img{
+		width: 30%;
+		height: 15%;
+	}
+
 }
 
 @media (min-width: 801px) and (max-width: 1024px) {
@@ -166,6 +219,18 @@
 	}
 	.container-fluid .form-inline .form-group h5{
 		font-size: 17px;
+	}
+	footer .row .col-sm-8 h6{
+		margin: 2% auto;
+	}
+	footer .row .col-sm-4 h5{
+		font-size: 20px;
+		float: none;
+		margin:auto;
+	}
+	footer .col-sm-4 img{
+		width: 20%;
+		height: 10%;
 	}
 }
 
@@ -190,6 +255,20 @@
 	.container-fluid .form-inline .form-group h5{
 		font-size: 17px;
 	}
+	footer .row .col-sm-8 h6{
+		margin: 2% auto;
+	}
+	footer .row .col-sm-4 {
+		text-align: right;
+	}
+	footer .row .col-sm-4 h5{
+		font-size: 20px;
+		margin:auto;
+	}
+	footer .col-sm-4 img{
+		width: 20%;
+		height: 10%;
+	}
 }
 
 @media (min-width: 1251px) and (max-width: 1366px) {
@@ -212,5 +291,19 @@
 	}
 	.container-fluid .form-inline .form-group h5{
 		font-size: 24px;
+	}
+	footer .row .col-sm-8 h6{
+		margin: 2% auto;
+	}
+	footer .row .col-sm-4{
+		text-align: right;
+	}
+	footer .row .col-sm-4 h5{
+		font-size: 25px;
+		float: right;
+	}
+	footer .col-sm-4 img{
+		width: 30%;
+		height: 15%;
 	}
 }

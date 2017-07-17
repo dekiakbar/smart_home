@@ -169,18 +169,18 @@
 			</div>
 		</div>
 	</div>
-<!-- 
+ 
 	<footer>
 		<div class="row">
 			<div class="col-sm-8">
 				<h6><?php echo date('Y') ?> © <a href="#">dept.ristek.hmti</a> All rights reserved</h6>
 			</div>
-			<div class="col-sm-4 text-right">
+			<div class="col-sm-4">
 				<h5>Supported by <img src="assets/img/footer-02.png"></h5>
 			</div>
 		</div>
 	</footer>
--->	
+
 	<script type="text/javascript" src="assets/js/bin/materialize.min.js"></script>
  	<script type="text/javascript" src="assets/js/tether.min.js"></script>
   	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
